@@ -56,8 +56,39 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ====================== GLOBAL CSS ===================== */
 
+#wrapper{
+    width: 1280px;
+}
 
+#tools, #drawArea{
+    display: inline-block;
+}
+
+.pixel{
+    position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+/* ===== TOOLBAR ===== */
+
+#tools{
+    margin-right: 30px;
+    background-color: #EDEDED;
+    width: 25%;
+    padding: 20px;
+}
+
+/* ===== DRAWAREA ===== */
+
+#drawArea{
+    width: 850px;
+    height: 600px;
+    border: 1px solid black;
+}
 
 
 
