@@ -16,21 +16,6 @@
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-	
-        <div id="wrapper">
-        	<div id="tools">
-        		<h1>Pixel <span>studio</span></h1>
-        		<input type="button" id="dot">
-        		<input type="button" id="line">
-        		<input type="button" id="erase">
-        		<div id="colorspicker">
-
-        		</div>
-        	</div>
-        	<div id="drawArea">
-        	</div>
-        </div>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -41,19 +26,11 @@
         <script src="js/app.js"></script>
 
         <script>
-        	var p;
-        	var $drawArea = $('#drawArea');
- 			var positionX, positionY;
-			$drawArea.on('click', function(event) {
-				positionX = event.offsetX;
-				positionY = event.offsetY;
-				p = new Pixel();
-				posX = Math.floor(positionX / p.size);
-				posY = Math.floor(positionY / p.size); 
-				p.set_color('green');
-				p.set_position(posX, posY);
-				$drawArea.append(p.$el);
-			});
+        $(function(){
+
+        	pixelStudio.init();
+        	
+        });
         </script>
     </body>
 </html>

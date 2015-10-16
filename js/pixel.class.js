@@ -12,7 +12,7 @@ function Pixel (size, color, posX, posY) {
 	this.set_size(size || 50);
 	this.set_position(posX, posY);
 
-	/*$('#drawArea').append(this.$el);*/
+	pixelStudio.$draw.append(this.$el);
 }
 
 Pixel.prototype = {
